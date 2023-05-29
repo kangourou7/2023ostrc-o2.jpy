@@ -1,0 +1,95 @@
+.table{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table .row{
+    display: table-row;
+}
+
+.table .cellL{
+    display: table-cell;
+    border: 1px solid #000000;
+    text-align: left;
+    vertical-align: middle;
+    padding: 0.5em;
+    width:50%;
+}
+
+.table .cellC{
+    display: table-cell;
+    border: 1px solid #000000;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5em;
+}
+
+.table .cellCw{
+    display: table-cell;
+    border: 1px solid #000000;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5em;
+}
+
+.table .cellR{
+    display: table-cell;
+    border: 1px solid #000000;
+    text-align: right;
+    vertical-align: middle;
+    padding: 0.5em;
+}
+
+.table .cellJ{
+    display: table-cell;
+    border: 1px solid #000000;
+    text-align: justify;
+    text-align-last: justify;
+    vertical-align: middle;
+    padding: 0.5em;
+}
+
+/*波線*/
+.wavyline{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+/*改行なし*/
+.nowrap{
+    white-space: nowrap;
+}
+
+/*メイリオ*/
+body{
+    font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+
+p{
+    font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+
+p.indent{
+    text-indent: 1em;
+    padding-left: 1em;
+}
+
+h2{
+    font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+
+/*テキストボックス*/
+.txtbox{
+    width: 100em;
+    max-width: 100%;
+}
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left{
+    text-align: left;
+}
