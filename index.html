@@ -7,7 +7,7 @@
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScX0pXX_CpHBEKXNjTRZGO-3c7ff2EbCvVCk3yx2RrVZMpOiQ/formResponse" method="POST" enctype="multipart/form-data" name="EmailForm" id="form1" onsubmit="return isCheck();">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeokU55_KiiaQb_2XiC8LKkxFqdPyTE6bB2xRhVn4fyNIkHzg/formResponse" method="POST" enctype="multipart/form-data" name="EmailForm" id="form1" onsubmit="return isCheck();">
 
 <center>
     <h2>
@@ -26,6 +26,23 @@
 
 <p>
     <b>
+        <ruby><rb>種目</rb><rp>(</rp><rt>しゅもく</rt><rp>)</rp></ruby>
+    </b>
+</p>
+<p>
+    <ruby><rb>種目</rb><rp>(</rp><rt>しゅもく</rt><rp>)</rp></ruby>を<ruby><rb>選択</rb><rp>(</rp><rt>せんたく</rt><rp>)</rp></ruby>してください。
+</p>
+
+<select id="00001" name="entry.1526945642" required onchange="SportsEvent(this)">
+    <option value="" hidden>選択してください</option>
+    <option value="サッカー">サッカー</option>
+    <option value="バスケットボール">バスケットボール</option>
+    <option value="体操">体操</option>
+</select>
+
+
+<p>
+    <b>
         <ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>１―<ruby><rb>参加</rb><rp>(</rp><rt>さんか</rt><rp>)</rp></ruby>
     </b>
 </p>
@@ -33,206 +50,135 @@
     <ruby><rb>過去</rb><rp>(</rp><rt>かこ</rt><rp>)</rp></ruby>7<ruby><rb>日間</rb><rp>(</rp><rt>かかん</rt><rp>)</rp></ruby>に<ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>の<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>により、<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>への<ruby><rb>参加</rb><rp>(</rp><rt>さんか</rt><rp>)</rp></ruby>に<ruby><rb>影響</rb><rp>(</rp><rt>えいきょう</rt><rp>)</rp></ruby>が<ruby><rb>出</rb><rp>(</rp><rt>で</rt><rp>)</rp></ruby>ましたか？
 </p>
 
-<p>　<input type="radio" id="01001" name="entry.1434883473" value="はい" required>
+<p>　<input type="radio" id="01001" name="entry.1015482029" value="はい" required>
     <label for="01001">
         <ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>の<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>はなく、<ruby><rb>全</rb><rp>(</rp><rt>すべ</rt><rp>)</rp></ruby>ての<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>に<ruby><rb>参加</rb><rp>(</rp><rt>さんか</rt><rp>)</rp></ruby>することができた。
     </label>
 </p>
-<p>　<input type="radio" id="01002" name="entry.1434883473" value="はい" required>
+<p>　<input type="radio" id="01002" name="entry.1015482029" value="はい">
     <label for="01002">
         <ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>の<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>はあったが、<ruby><rb>全</rb><rp>(</rp><rt>すべ</rt><rp>)</rp></ruby>ての<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>に<ruby><rb>参加</rb><rp>(</rp><rt>さんか</rt><rp>)</rp></ruby>することができた。
     </label>
 </p>
-<p>　<input type="radio" id="01003" name="entry.1434883473" value="はい" required>
+<p>　<input type="radio" id="01003" name="entry.1015482029" value="はい">
     <label for="01003">
         <ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>の<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>があり、<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>への<ruby><rb>参加</rb><rp>(</rp><rt>さんか</rt><rp>)</rp></ruby>を<ruby><rb>減</rb><rp>(</rp><rt>へ</rt><rp>)</rp></ruby>らした。
     </label>
 </p>
-<p>　<input type="radio" id="01004" name="entry.1434883473" value="はい" required>
+<p>　<input type="radio" id="01004" name="entry.1015482029" value="はい">
     <label for="01004">
         <ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>の<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>があり、<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>を<ruby><rb>行</rb><rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>うことができなかった。
     </label>
 </p>
 
-<!--
+<br>
 
-<ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>２―<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>/<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>の<ruby><rb>変更</rb><rp>(</rp><rt>へんこう</rt><rp>)</rp></ruby>
-<ruby><rb>過去</rb><rp>(</rp><rt>かこ</rt><rp>)</rp></ruby>7<ruby><rb>日間</rb><rp>(</rp><rt>かかん</rt><rp>)</rp></ruby>に<ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>の<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>により、どのくらい<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>を<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えましたか？
-<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>を<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えるとは、<ruby><rb>練習時間</rb><rp>(</rp><rt>れんしゅうじかん</rt><rp>)</rp></ruby>を<ruby><rb>減</rb><rp>(</rp><rt>へ</rt><rp>)</rp></ruby>らす、<ruby><rb>強度</rb><rp>(</rp><rt>きょうど</rt><rp>)</rp></ruby>を<ruby><rb>落</rb><rp>(</rp><rt>お</rt><rp>)</rp></ruby>とす、<ruby><rb>練習内容</rb><rp>(</rp><rt>れんしゅうないよう</rt><rp>)</rp></ruby>を<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>える、ポジションを<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えるなどです。
+<p>
+    <b>
+        <ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>２―<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>/<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>の<ruby><rb>変更</rb><rp>(</rp><rt>へんこう</rt><rp>)</rp></ruby>
+    </b>
+</p>
+<p>
+    <ruby><rb>過去</rb><rp>(</rp><rt>かこ</rt><rp>)</rp></ruby>7<ruby><rb>日間</rb><rp>(</rp><rt>かかん</rt><rp>)</rp></ruby>に<ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>の<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>により、どのくらい<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>を<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えましたか？
+</p>
+<p>
+    <ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>を<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えるとは、<ruby><rb>練習時間</rb><rp>(</rp><rt>れんしゅうじかん</rt><rp>)</rp></ruby>を<ruby><rb>減</rb><rp>(</rp><rt>へ</rt><rp>)</rp></ruby>らす、<ruby><rb>強度</rb><rp>(</rp><rt>きょうど</rt><rp>)</rp></ruby>を<ruby><rb>落</rb><rp>(</rp><rt>お</rt><rp>)</rp></ruby>とす、<ruby><rb>練習内容</rb><rp>(</rp><rt>れんしゅうないよう</rt><rp>)</rp></ruby>を<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>える、ポジションを<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えるなどです。
+</p>
 
-□	<ruby><rb>全</rb><rp>(</rp><rt>まった</rt><rp>)</rp></ruby>く<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えなかった。
-□	<ruby><rb>少</rb><rp>(</rp><rt>すこ</rt><rp>)</rp></ruby>し<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えた。
-□	<ruby><rb>半分</rb><rp>(</rp><rt>はんぶん</rt><rp>)</rp></ruby>ほど<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えた。
-□	かなり<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えた。
+<p>　<input type="radio" id="02001" name="entry.1279962251" value="はい" required>
+    <label for="02001">
+        <ruby><rb>全</rb><rp>(</rp><rt>まった</rt><rp>)</rp></ruby>く<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えなかった。
+    </label>
+</p>
+<p>　<input type="radio" id="02002" name="entry.1279962251" value="はい">
+    <label for="02002">
+        <ruby><rb>少</rb><rp>(</rp><rt>すこ</rt><rp>)</rp></ruby>し<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えた。
+    </label>
+</p>
+<p>　<input type="radio" id="02003" name="entry.1279962251" value="はい">
+    <label for="02003">
+        <ruby><rb>半分</rb><rp>(</rp><rt>はんぶん</rt><rp>)</rp></ruby>ほど<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えた。
+    </label>
+</p>
+<p>　<input type="radio" id="02004" name="entry.1279962251" value="はい">
+    <label for="02004">
+        かなり<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えた。
+    </label>
+</p>
 
+<br>
 
-<ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>３―パフォーマンス
-<ruby><rb>過去</rb><rp>(</rp><rt>かこ</rt><rp>)</rp></ruby>7<ruby><rb>日間</rb><rp>(</rp><rt>かかん</rt><rp>)</rp></ruby>に<ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>の<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>が、どのくらいパフォーマンスに<ruby><rb>影響</rb><rp>(</rp><rt>えいきょう</rt><rp>)</rp></ruby>しましたか？
-パフォーマンスとは、サッカーの<ruby><rb>動</rb><rp>(</rp><rt>うご</rt><rp>)</rp></ruby>きや<ruby><rb>実力</rb><rp>(</rp><rt>じつりょく</rt><rp>)</rp></ruby>を<ruby><rb>発揮</rb><rp>(</rp><rt>はっき</rt><rp>)</rp></ruby>することなどです。
+<p>
+    <b>
+        <ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>３―パフォーマンス
+    </b>
+</p>
+<p>
+    <ruby><rb>過去</rb><rp>(</rp><rt>かこ</rt><rp>)</rp></ruby>7<ruby><rb>日間</rb><rp>(</rp><rt>かかん</rt><rp>)</rp></ruby>に<ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>の<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>が、どのくらいパフォーマンスに<ruby><rb>影響</rb><rp>(</rp><rt>えいきょう</rt><rp>)</rp></ruby>しましたか？
+</p>
+<p>
+    パフォーマンスとは、<span id="03000">［種目］</span>の<ruby><rb>動</rb><rp>(</rp><rt>うご</rt><rp>)</rp></ruby>きや<ruby><rb>実力</rb><rp>(</rp><rt>じつりょく</rt><rp>)</rp></ruby>を<ruby><rb>発揮</rb><rp>(</rp><rt>はっき</rt><rp>)</rp></ruby>することなどです。
+</p>
 
-□	<ruby><rb>全</rb><rp>(</rp><rt>まった</rt><rp>)</rp></ruby>く<ruby><rb>影響</rb><rp>(</rp><rt>えいきょう</rt><rp>)</rp></ruby>しなかった。
-□	<ruby><rb>少</rb><rp>(</rp><rt>すこ</rt><rp>)</rp></ruby>し<ruby><rb>影響</rb><rp>(</rp><rt>えいきょう</rt><rp>)</rp></ruby>した。
-□	ある<ruby><rb>程度</rb><rp>(</rp><rt>ていど</rt><rp>)</rp></ruby><ruby><rb>影響</rb><rp>(</rp><rt>えいきょう</rt><rp>)</rp></ruby>した。
-□	かなり<ruby><rb>影響</rb><rp>(</rp><rt>えいきょう</rt><rp>)</rp></ruby>した。
+<p>　<input type="radio" id="03001" name="entry.244485891" value="はい" required>
+    <label for="03001">
+        <ruby><rb>全</rb><rp>(</rp><rt>まった</rt><rp>)</rp></ruby>く<ruby><rb>影響</rb><rp>(</rp><rt>えいきょう</rt><rp>)</rp></ruby>しなかった。
+    </label>
+</p>
+<p>　<input type="radio" id="03002" name="entry.244485891" value="はい">
+    <label for="03002">
+        <ruby><rb>少</rb><rp>(</rp><rt>すこ</rt><rp>)</rp></ruby>し<ruby><rb>影響</rb><rp>(</rp><rt>えいきょう</rt><rp>)</rp></ruby>した。
+    </label>
+</p>
+<p>　<input type="radio" id="03003" name="entry.244485891" value="はい">
+    <label for="03003">
+        ある<ruby><rb>程度</rb><rp>(</rp><rt>ていど</rt><rp>)</rp></ruby><ruby><rb>影響</rb><rp>(</rp><rt>えいきょう</rt><rp>)</rp></ruby>した。
+    </label>
+</p>
+<p>　<input type="radio" id="03004" name="entry.244485891" value="はい">
+    <label for="03004">
+        かなり<ruby><rb>影響</rb><rp>(</rp><rt>えいきょう</rt><rp>)</rp></ruby>した。
+    </label>
+</p>
 
+<br>
 
-<ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>４―<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>み
-<ruby><rb>過去</rb><rp>(</rp><rt>かこ</rt><rp>)</rp></ruby>7<ruby><rb>日間</rb><rp>(</rp><rt>かかん</rt><rp>)</rp></ruby>に<ruby><rb>感</rb><rp>(</rp><rt>かん</rt><rp>)</rp></ruby>じた<ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>の<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>みはどのくらいでしたか？
+<p>
+    <b>
+        <ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>４―<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>み
+    </b>
+</p>
+<p>
+    <ruby><rb>過去</rb><rp>(</rp><rt>かこ</rt><rp>)</rp></ruby>7<ruby><rb>日間</rb><rp>(</rp><rt>かかん</rt><rp>)</rp></ruby>に<ruby><rb>感</rb><rp>(</rp><rt>かん</rt><rp>)</rp></ruby>じた<ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>の<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>みはどのくらいでしたか？
+</p>
 
-□	<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>くなかった。
-□	<ruby><rb>少</rb><rp>(</rp><rt>すこ</rt><rp>)</rp></ruby>し<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>かった。
-□	まあまあ<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>かった。
-□	かなり<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>かった。
-
--->
-
-
-
-
-
-
-
-<!--
-
-<p>　あなたのチームまたは所属している団体（以降、チームとします）で行っているケガ（傷害）の記録とその活用方法についてお聞きします。</p>
-
-<p></p>
-<p></p>
-<p><b>1．アンケートに回答いただいているあなたのことについてお聞きします。あなたは大学院生ですか。</b></p>
-<p>　<input type="radio" id="01001" name="entry.1434883473" value="はい" required><label for="01001">はい</label></p>
-<p>　<input type="radio" id="01002" name="entry.1434883473" value="いいえ"><label for="01002">いいえ</label></p>
-
-<p><b>2．チームでのあなたの役割はどれですか。</b></p>
-<p>　※複数の役割がある方は主な役割を選択してください。</p>
-<p>　<input type="radio" id="02001" name="entry.2084437242" onchange="tClear(this)" value="メディカルスタッフ（例：医師、トレーナー）※コンディショニングに関わっている方" required><label for="02001">メディカルスタッフ（例：医師、トレーナー）※コンディショニングに関わっている方</label></p>
-<p>　<input type="radio" id="02002" name="entry.2084437242" onchange="tClear(this)" value="コーチングスタッフ（例：監督、コーチ）※競技の技術や戦術を指導している方"><label for="02002">コーチングスタッフ（例：監督、コーチ）※競技の技術や戦術を指導している方</label></p>
-<p>　<input type="radio" id="0200s" name="entry.2084437242" onchange="tClear(this)" value="（その他）"><label for="0200s">その他（具体的に記入：<input type="text" id="0200st" name="entry.2084437242" onblur="gCheck(this)">）</label></p>
-
-<p><b>3．あなたのチームの性別はどれですか。</b></p>
-<p>　<input type="radio" id="03001" name="entry.130758380" value="男子" required><label for="03001">男子</label></p>
-<p>　<input type="radio" id="03002" name="entry.130758380" value="女子"><label for="03002">女子</label></p>
-<p>　<input type="radio" id="03003" name="entry.130758380" value="混合"><label for="03003">混合</label></p>
-
-<p><b>4．あなたのチームに所属している選手の総数を入力してください。</b></p>
-<p>　※1軍、2軍などに分かれている場合でも、チームの合計の選手数を入力してください。</p>
-<p>　<input type="tel" id="04001" name="entry.76824352" onchange="numChk04()" required><label for="04001">人</label></p>
-
-
-<p><b>5．あなたのチームの<u>過去3年間における</u>競技レベルはどれですか。</b></p>
-<p>　※過去3年間で一度でも全国大会に出場している場合は「全国大会出場レベル」を選択してください。</p>
-<p>　※団体戦などのない個人種目で、競技レベルが様々な選手が所属しているチームは、チームとしての平均でお答えください。</p>
-<p>　<input type="radio" id="05001" name="entry.827914894" value="全国大会未出場レベル" required><label for="05001">全国大会未出場レベル</label></p>
-<p>　<input type="radio" id="05002" name="entry.827914894" value="全国大会出場レベル"><label for="05002">全国大会出場レベル</label></p>
-
-
-<p><b>6．あなたのチームの<u>1日当たりの</u>練習時間を入力してください。</b></p>
-<p>　※長期休暇やオフシーズンを除いた1日当たりの平均練習時間をお答えください。</p>
-<p>　※練習には、戦術・技術練習、フィジカルトレーニングなど身体活動を伴うものは全て含みます。</p>
-<p>　<input type="text" id="06001" name="entry.1532289689" min="0" onchange="numChk06(this)" required><label for="06001">時間</label></p>
-
-
-<p><b>7．あなたのチームの<u>1週間当たりの</u>練習日数はどれですか。</b></p>
-<p>　※長期休暇やオフシーズンを除いた1週間当たりの平均練習日数をお答えください。</p>
-<p>　※練習には、戦術・技術練習、フィジカルトレーニングなど身体活動を伴うものは全て含みます。</p>
-　<select id="07001" name="entry.1070252257" required>
-    <option value="" hidden>選択してください</option>
-    <option value="1">1日</option>
-    <option value="2">2日</option>
-    <option value="3">3日</option>
-    <option value="4">4日</option>
-    <option value="5">5日</option>
-    <option value="6">6日</option>
-    <option value="7">7日</option>
-</select>
-
-
-<p><b>8．あなたのチームで行っているスポーツ種目はどれですか。</b></p>
-　<select id="08001" name="entry.1526945642" required onchange="q08001(this)">
-    <option value="" hidden>選択してください</option>
-    <option value="アイスホッケー">アイスホッケー</option>
-    <option value="アメリカンフットボール">アメリカンフットボール</option>
-    <option value="ウエイトリフティング">ウエイトリフティング</option>
-    <option value="カヌー">カヌー</option>
-    <option value="空手道">空手道</option>
-    <option value="弓道">弓道</option>
-    <option value="グラウンド・ゴルフ">グラウンド・ゴルフ</option>
-    <option value="クレー射撃">クレー射撃</option>
-    <option value="ゲートボール">ゲートボール</option>
-    <option value="剣道">剣道</option>
-    <option value="硬式野球">硬式野球</option>
-    <option value="ゴルフ">ゴルフ</option>
-    <option value="サッカー">サッカー</option>
-    <option value="山岳">山岳</option>
-    <option value="自転車">自転車</option>
-    <option value="銃剣道">銃剣道</option>
-    <option value="柔道">柔道</option>
-    <option value="新体操">新体操</option>
-    <option value="水泳">水泳</option>
-    <option value="スキー">スキー</option>
-    <option value="スケート">スケート</option>
-    <option value="相撲">相撲</option>
-    <option value="セーリング">セーリング</option>
-    <option value="ソフトテニス（軟式テニス）">ソフトテニス（軟式テニス）</option>
-    <option value="ソフトボール">ソフトボール</option>
-    <option value="体操競技">体操競技</option>
-    <option value="卓球">卓球</option>
-    <option value="綱引">綱引</option>
-    <option value="硬式テニス">硬式テニス</option>
-    <option value="トライアスロン">トライアスロン</option>
-    <option value="なぎなた">なぎなた</option>
-    <option value="軟式野球">軟式野球</option>
-    <option value="馬術">馬術</option>
-    <option value="バスケットボール">バスケットボール</option>
-    <option value="バドミントン">バドミントン</option>
-    <option value="バレーボール">バレーボール</option>
-    <option value="パワーリフティング">パワーリフティング</option>
-    <option value="ハンドボール">ハンドボール</option>
-    <option value="フェンシング">フェンシング</option>
-    <option value="フットサル">フットサル</option>
-    <option value="ボウリング">ボウリング</option>
-    <option value="ボート">ボート</option>
-    <option value="ボクシング">ボクシング</option>
-    <option value="ホッケー">ホッケー</option>
-    <option value="ライフル射撃">ライフル射撃</option>
-    <option value="ラグビー">ラグビー</option>
-    <option value="ラクロス">ラクロス</option>
-    <option value="陸上競技">陸上競技</option>
-    <option value="レスリング">レスリング</option>
-    <option value="（その他）">その他</option>
-</select>
-<span id="0800s" style="display:none">
-（具体的に記入：<input type="text" id="0800st" name="entry.1526945642">）</p>
-</span>
-
-<p>　<input type="radio" id="08001" name="entry.1526945642" value="アメリカンフットボール" required><label for="08001">アメリカンフットボール</label></p>
-<p>　<input type="radio" id="08002" name="entry.1526945642" value="空手道"><label for="08002">空手道</label></p>
-<p>　<input type="radio" id="08003" name="entry.1526945642" value="剣道"><label for="08003">剣道</label></p>
-<p>　<input type="radio" id="08004" name="entry.1526945642" value="硬式野球"><label for="08004">硬式野球</label></p>
-<p>　<input type="radio" id="08005" name="entry.1526945642" value="サッカー"><label for="08005">サッカー</label></p>
-<p>　<input type="radio" id="08006" name="entry.1526945642" value="柔道"><label for="08006">柔道</label></p>
-<p>　<input type="radio" id="08007" name="entry.1526945642" value="水泳"><label for="08007">水泳</label></p>
-<p>　<input type="radio" id="08008" name="entry.1526945642" value="ソフトボール"><label for="08008">ソフトボール</label></p>
-<p>　<input type="radio" id="08009" name="entry.1526945642" value="体操競技"><label for="08009">体操競技</label></p>
-<p>　<input type="radio" id="08010" name="entry.1526945642" value="卓球"><label for="08010">卓球</label></p>
-<p>　<input type="radio" id="08011" name="entry.1526945642" value="硬式テニス"><label for="08011">硬式テニス</label></p>
-<p>　<input type="radio" id="08012" name="entry.1526945642" value="バスケットボール"><label for="08012">バスケットボール</label></p>
-<p>　<input type="radio" id="08013" name="entry.1526945642" value="バドミントン"><label for="08013">バドミントン</label></p>
-<p>　<input type="radio" id="08014" name="entry.1526945642" value="バレーボール"><label for="08014">バレーボール</label></p>
-<p>　<input type="radio" id="08015" name="entry.1526945642" value="ハンドボール"><label for="08015">ハンドボール</label></p>
-<p>　<input type="radio" id="08016" name="entry.1526945642" value="ラグビー"><label for="08016">ラグビー</label></p>
-<p>　<input type="radio" id="08017" name="entry.1526945642" value="陸上競技"><label for="08017">陸上競技</label></p>
-<p>　<input type="radio" id="0800s" name="entry.1526945642" value="（その他）"><label for="0800s">その他（具体的に記入：<input type="text" id="0800st" name="entry.1526945642">）</label></p>
+<p>　<input type="radio" id="04001" name="entry.1652200503" value="はい" required>
+    <label for="04001">
+        <ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>くなかった。
+    </label>
+</p>
+<p>　<input type="radio" id="04002" name="entry.1652200503" value="はい">
+    <label for="04002">
+        <ruby><rb>少</rb><rp>(</rp><rt>すこ</rt><rp>)</rp></ruby>し<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>かった。
+    </label>
+</p>
+<p>　<input type="radio" id="04003" name="entry.1652200503" value="はい">
+    <label for="04003">
+        まあまあ<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>かった。
+    </label>
+</p>
+<p>　<input type="radio" id="04004" name="entry.1652200503" value="はい">
+    <label for="04004">
+        かなり<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>かった。
+    </label>
+</p>
 
 
 <center>
-
-<p>
-<input type="submit" value="送信する">
-</p>
-
+    <p>
+        <input type="submit" value="送信する">
+    </p>
 </center>
-
--->
 
 </form>
 <script src="code.js" type="text/javascript" charset="utf-8"></script>
