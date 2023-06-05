@@ -93,3 +93,8 @@ h2{
 .left{
     text-align: left;
 }
+
+/*ボタン*/
+.large_button{
+    font-size: 200%;
+}
