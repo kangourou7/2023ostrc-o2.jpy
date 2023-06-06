@@ -68,6 +68,7 @@ body{
 
 p{
     font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+    font-size: 1em;
 }
 
 p.indent{
