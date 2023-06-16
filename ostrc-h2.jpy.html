@@ -7,7 +7,7 @@
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeokU55_KiiaQb_2XiC8LKkxFqdPyTE6bB2xRhVn4fyNIkHzg/formResponse" method="POST" enctype="multipart/form-data" name="EmailForm" id="form1" onsubmit="return isCheck();">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf_sU92Wv7ph-aq-6yQM2KtADtzWZ_sQK63815NmTZwxKFolQ/formResponse" method="POST" enctype="multipart/form-data" name="EmailForm" id="form1" target=”hidden_iframe” onsubmit="submitted=true;">
 
 <center>
     <h2>
@@ -55,26 +55,30 @@
 <p>
     <ruby><rb>過去</rb><rp>(</rp><rt>かこ</rt><rp>)</rp></ruby>7<ruby><rb>日間</rb><rp>(</rp><rt>かかん</rt><rp>)</rp></ruby>にケガ、<ruby><rb>病気</rb><rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>、あるいはその<ruby><rb>他</rb><rp>(</rp><rt>た</rt><rp>)</rp></ruby>の<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>により、<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>への<ruby><rb>参加</rb><rp>(</rp><rt>さんか</rt><rp>)</rp></ruby>に<ruby><rb>影響</rb><rp>(</rp><rt>えいきょう</rt><rp>)</rp></ruby>が<ruby><rb>出</rb><rp>(</rp><rt>で</rt><rp>)</rp></ruby>ましたか？
 </p>
-<p>　<input type="radio" id="01001" name="entry.2022183060" value="ケガや病気はなく、全ての練習や試合に参加することができた。">
+<p>　<input type="radio" id="01001" name="entry.2022183060" value="ケガや病気はなく、全ての練習や試合に参加することができた。" required onchange="Q1_branch(this)">
     <label for="01001">
         ケガや<ruby><rb>病気</rb><rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>はなく、<ruby><rb>全</rb><rp>(</rp><rt>すべ</rt><rp>)</rp></ruby>ての<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>に<ruby><rb>参加</rb><rp>(</rp><rt>さんか</rt><rp>)</rp></ruby>することができた。
     </label>
 </p>
-<p>　<input type="radio" id="01002" name="entry.2022183060" value="ケガや病気はあったが、全ての練習や試合に参加することができた。">
+<p>　<input type="radio" id="01002" name="entry.2022183060" value="ケガや病気はあったが、全ての練習や試合に参加することができた。" onchange="Q1_branch(this)">
     <label for="01002">
         ケガや<ruby><rb>病気</rb><rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>はあったが、<ruby><rb>全</rb><rp>(</rp><rt>すべ</rt><rp>)</rp></ruby>ての<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>に<ruby><rb>参加</rb><rp>(</rp><rt>さんか</rt><rp>)</rp></ruby>することができた。
     </label>
 </p>
-<p>　<input type="radio" id="01003" name="entry.2022183060" value="ケガや病気があり、練習や試合への参加を減らした。">
+<p>　<input type="radio" id="01003" name="entry.2022183060" value="ケガや病気があり、練習や試合への参加を減らした。" onchange="Q1_branch(this)">
     <label for="01003">
         ケガや<ruby><rb>病気</rb><rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>があり、<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>への<ruby><rb>参加</rb><rp>(</rp><rt>さんか</rt><rp>)</rp></ruby>を<ruby><rb>減</rb><rp>(</rp><rt>へ</rt><rp>)</rp></ruby>らした。
     </label>
 </p>
-<p>　<input type="radio" id="01004" name="entry.2022183060" value="ケガや病気があり、練習や試合を行うことができなかった。">
+<p>　<input type="radio" id="01004" name="entry.2022183060" value="ケガや病気があり、練習や試合を行うことができなかった。" onchange="Q1_branch(this)">
     <label for="01004">
         ケガや<ruby><rb>病気</rb><rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>があり、<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>を<ruby><rb>行</rb><rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>うことができなかった。
     </label>
 </p>
+
+<span id="0100top">
+
+<span id="0100last">
 
 <br>
 
@@ -90,7 +94,7 @@
     <ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>を<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えるとは、<ruby><rb>練習時間</rb><rp>(</rp><rt>れんしゅうじかん</rt><rp>)</rp></ruby>を<ruby><rb>減</rb><rp>(</rp><rt>へ</rt><rp>)</rp></ruby>らす、<ruby><rb>強度</rb><rp>(</rp><rt>きょうど</rt><rp>)</rp></ruby>を<ruby><rb>落</rb><rp>(</rp><rt>お</rt><rp>)</rp></ruby>とす、<ruby><rb>練習内容</rb><rp>(</rp><rt>れんしゅうないよう</rt><rp>)</rp></ruby>を<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>える、ポジションを<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えるなどです。
 </p>
 
-<p>　<input type="radio" id="02001" name="entry.1016150325" value="全く変えなかった。">
+<p>　<input type="radio" id="02001" name="entry.1016150325" value="全く変えなかった。" required>
     <label for="02001">
         <ruby><rb>全</rb><rp>(</rp><rt>まった</rt><rp>)</rp></ruby>く<ruby><rb>変</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>えなかった。
     </label>
@@ -128,7 +132,7 @@
     パフォーマンスとは、<span id="03000">［スポーツ<ruby><rb>種目</rb><rp>(</rp><rt>しゅもく</rt><rp>)</rp></ruby>］</span>の<ruby><rb>動</rb><rp>(</rp><rt>うご</rt><rp>)</rp></ruby>きや<ruby><rb>実力</rb><rp>(</rp><rt>じつりょく</rt><rp>)</rp></ruby>を<ruby><rb>発揮</rb><rp>(</rp><rt>はっき</rt><rp>)</rp></ruby>することなどです。
 </p>
 
-<p>　<input type="radio" id="03001" name="entry.326255673" value="全く影響しなかった。">
+<p>　<input type="radio" id="03001" name="entry.326255673" value="全く影響しなかった。" required>
     <label for="03001">
         <ruby><rb>全</rb><rp>(</rp><rt>まった</rt><rp>)</rp></ruby>く<ruby><rb>影響</rb><rp>(</rp><rt>えいきょう</rt><rp>)</rp></ruby>しなかった。
     </label>
@@ -163,7 +167,7 @@
     <ruby><rb>過去</rb><rp>(</rp><rt>かこ</rt><rp>)</rp></ruby>7<ruby><rb>日間</rb><rp>(</rp><rt>かかん</rt><rp>)</rp></ruby>に<ruby><rb>感</rb><rp>(</rp><rt>かん</rt><rp>)</rp></ruby>じたケガや<ruby><rb>病気</rb><rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>の<ruby><rb>症状</rb><rp>(</rp><rt>しょうじょう</rt><rp>)</rp></ruby>はどのくらいでしたか？
 </p>
 
-<p>　<input type="radio" id="04001" name="entry.2130880281" value="症状はなかった。">
+<p>　<input type="radio" id="04001" name="entry.2130880281" value="症状はなかった。" required>
     <label for="04001">
         <ruby><rb>症状</rb><rp>(</rp><rt>しょうじょう</rt><rp>)</rp></ruby>はなかった。
     </label>
@@ -188,6 +192,8 @@
     </label>
 </p>
 
+</span>
+
 <br>
 
 <p>
@@ -199,18 +205,20 @@
     <ruby><rb>上</rb><rp>(</rp><rt>うえ</rt><rp>)</rp></ruby>の４つの<ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>で<ruby><rb>答</rb><rp>(</rp><rt></rt>こた</rt><rp>)</rp></ruby>えた<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>はケガまたは<ruby><rb>病気</rb><rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>のどちらですか？
 </p>
 
-<p>　<input type="radio" id="05001" name="entry.1272528959" value="ケガ">
+<p>　<input type="radio" id="05001" name="entry.1272528959" value="ケガ" required onchange="Q5_branch(this)">
     <label for="05001">
         ケガ
     </label>
 </p>
 
-<p>　<input type="radio" id="05002" name="entry.1272528959" value="病気">
+<p>　<input type="radio" id="05002" name="entry.1272528959" value="病気" onchange="Q5_branch(this)">
     <label for="05002">
         <ruby><rb>病気</rb><rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>
     </label>
 </p>
 
+<span id="0500kega">
+<!--質問5で「病気」と回答した場合-->
 <br>
 
 <p>
@@ -222,109 +230,109 @@
     あなたのケガの<ruby><rb>部位</rb><rp>(</rp><rt>ぶい</rt><rp>)</rp></ruby>を<ruby><rb>選</rb><rp>(</rp><rt>えら</rt><rp>)</rp></ruby>んでください。もしケガがいくつかの<ruby><rb>部位</rb><rp>(</rp><rt>ぶい</rt><rp>)</rp></ruby>におよぶ<ruby><rb>場合</rb><rp>(</rp><rt>ばあい</rt><rp>)</rp></ruby>は<ruby><rb>一番</rb><rp>(</rp><rt>いちばん</rt><rp>)</rp></ruby><ruby><rb>気</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby>になる<ruby><rb>部位</rb><rp>(</rp><rt>ぶい</rt><rp>)</rp></ruby>を<ruby><rb>選</rb><rp>(</rp><rt>えら</rt><rp>)</rp></ruby>んでください。もしケガが<ruby><rb>複数</rb><rp>(</rp><rt>ふくすう</rt><rp>)</rp></ruby>ある<ruby><rb>場合</rb><rp>(</rp><rt>ばあい</rt><rp>)</rp></ruby>は<ruby><rb>質問紙</rb><rp>(</rp><rt>しつもんし</rt><rp>)</rp></ruby>を<ruby><rb>分</rb><rp>(</rp><rt>わ</rt><rp>)</rp></ruby>けて<ruby><rb>別々</rb><rp>(</rp><rt>べつべつ</rt><rp>)</rp></ruby>に<ruby><rb>回答</rb><rp>(</rp><rt>かいとう</rt><rp>)</rp></ruby>してください。
 </p>
 
-<p>　<input type="radio" id="06001" name="entry.1282152750" value="頭">
+<p>　<input type="radio" id="06001" name="entry.1282152750" onchange="tClear(this)" value="頭" required>
     <label for="06001">
         <ruby><rb>頭</rb><rp>(</rp><rt>あたま</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="radio" id="06002" name="entry.1282152750" value="首">
+<p>　<input type="radio" id="06002" name="entry.1282152750" onchange="tClear(this)" value="首">
     <label for="06002">
         <ruby><rb>首</rb><rp>(</rp><rt>くび</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="radio" id="06003" name="entry.1282152750" value="肩">
+<p>　<input type="radio" id="06003" name="entry.1282152750" onchange="tClear(this)" value="肩">
     <label for="06003">
         <ruby><rb>肩</rb><rp>(</rp><rt>かた</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="radio" id="06004" name="entry.1282152750" value="上腕">
+<p>　<input type="radio" id="06004" name="entry.1282152750" onchange="tClear(this)" value="上腕">
     <label for="06004">
         <ruby><rb>上腕</rb><rp>(</rp><rt>じょうわん</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="radio" id="06005" name="entry.1282152750" value="肘">
+<p>　<input type="radio" id="06005" name="entry.1282152750" onchange="tClear(this)" value="肘">
     <label for="06005">
         <ruby><rb>肘</rb><rp>(</rp><rt>ひじ</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="radio" id="06006" name="entry.1282152750" value="前腕">
+<p>　<input type="radio" id="06006" name="entry.1282152750" onchange="tClear(this)" value="前腕">
     <label for="06006">
         <ruby><rb>前腕</rb><rp>(</rp><rt>ぜんわん</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="radio" id="06007" name="entry.1282152750" value="手首">
+<p>　<input type="radio" id="06007" name="entry.1282152750" onchange="tClear(this)" value="手首">
     <label for="06007">
         <ruby><rb>手首</rb><rp>(</rp><rt>てくび</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="radio" id="06008" name="entry.1282152750" value="手">
+<p>　<input type="radio" id="06008" name="entry.1282152750" onchange="tClear(this)" value="手">
     <label for="06008">
         <ruby><rb>手</rb><rp>(</rp><rt>て</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="radio" id="06009" name="entry.1282152750" value="胸">
+<p>　<input type="radio" id="06009" name="entry.1282152750" onchange="tClear(this)" value="胸">
     <label for="06009">
         <ruby><rb>胸</rb><rp>(</rp><rt>むね</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="radio" id="06010" name="entry.1282152750" value="上の背中">
+<p>　<input type="radio" id="06010" name="entry.1282152750" onchange="tClear(this)" value="上の背中">
     <label for="06010">
         <ruby><rb>上</rb><rp>(</rp><rt>うえ</rt><rp>)</rp></ruby>の<ruby><rb>背中</rb><rp>(</rp><rt>せなか</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="radio" id="06011" name="entry.1282152750" value="腰/お尻">
+<p>　<input type="radio" id="06011" name="entry.1282152750" onchange="tClear(this)" value="腰/お尻">
     <label for="06011">
         <ruby><rb>腰</rb><rp>(</rp><rt>こし</rt><rp>)</rp></ruby>/お<ruby><rb>尻</rb><rp>(</rp><rt>しり</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="radio" id="06012" name="entry.1282152750" value="腹">
+<p>　<input type="radio" id="06012" name="entry.1282152750" onchange="tClear(this)" value="腹">
     <label for="06012">
         <ruby><rb>腹</rb><rp>(</rp><rt>はら</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="radio" id="06013" name="entry.1282152750" value="股関節/そけい部（ふともものつけ根）">
+<p>　<input type="radio" id="06013" name="entry.1282152750" onchange="tClear(this)" value="股関節/そけい部（ふともものつけ根）">
     <label for="06013">
         <ruby><rb>股関節</rb><rp>(</rp><rt>こかんせつ</rt><rp>)</rp></ruby>/そけい<ruby><rb>部</rb><rp>(</rp><rt>ぶ</rt><rp>)</rp></ruby>（ふともものつけ<ruby><rb>根</rb><rp>(</rp><rt>ね</rt><rp>)</rp></ruby>）
     </label>
 </p>
 
-<p>　<input type="radio" id="06014" name="entry.1282152750" value="ふともも">
+<p>　<input type="radio" id="06014" name="entry.1282152750" onchange="tClear(this)" value="ふともも">
     <label for="06014">
         ふともも
     </label>
 </p>
 
-<p>　<input type="radio" id="06015" name="entry.1282152750" value="膝">
+<p>　<input type="radio" id="06015" name="entry.1282152750" onchange="tClear(this)" value="膝">
     <label for="06015">
         <ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="radio" id="06016" name="entry.1282152750" value="すね/ふくらはぎ">
+<p>　<input type="radio" id="06016" name="entry.1282152750" onchange="tClear(this)" value="すね/ふくらはぎ">
     <label for="06016">
         すね/ふくらはぎ
     </label>
 </p>
 
-<p>　<input type="radio" id="06017" name="entry.1282152750" value="足首">
+<p>　<input type="radio" id="06017" name="entry.1282152750" onchange="Q6tClear(this)" value="足首">
     <label for="06017">
         <ruby><rb>足首</rb><rp>(</rp><rt>あしくび</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="radio" id="06018" name="entry.1282152750" value="足部">
+<p>　<input type="radio" id="06018" name="entry.1282152750" onchange="Q6tClear(this)" value="足部">
     <label for="06018">
         <ruby><rb>足部</rb><rp>(</rp><rt>そくぶ</rt><rp>)</rp></ruby>
     </label>
@@ -334,11 +342,15 @@
     <label for="06019">
         その<ruby><rb>他</rb><rp>(</rp><rt>た</rt><rp>)</rp></ruby>
         <p>
-            　　　<input type="text" id="2300st" name="entry.1371248371" onblur="gCheck(this);checkClear(this)">
+            　　　<input type="text" id="06019t" name="entry.1371248371" onblur="gCheck(this);tClear(this)">
         </p>
     </label>
 </p>
 
+</span>
+
+<span id="0500byoki">
+<!--質問5で「病気」と回答した場合-->
 <br>
 
 <p>
@@ -350,165 +362,167 @@
     <ruby><rb>過去</rb><rp>(</rp><rt>かこ</rt><rp>)</rp></ruby>7<ruby><rb>日間</rb><rp>(</rp><rt>かかん</rt><rp>)</rp></ruby>に<ruby><rb>感</rb><rp>(</rp><rt>かん</rt><rp>)</rp></ruby>じた<ruby><rb>主</rb><rp>(</rp><rt>おも</rt><rp>)</rp></ruby>な<ruby><rb>病気</rb><rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>の<ruby><rb>症状</rb><rp>(</rp><rt>しょうじょう</rt><rp>)</rp></ruby>を<ruby><rb>選</rb><rp>(</rp><rt>えら</rt><rp>)</rp></ruby>んでください。<ruby><rb>複数</rb><rp>(</rp><rt>ふくすう</rt><rp>)</rp></ruby>の<ruby><rb>選択肢</rb><rp>(</rp><rt>せんたくし</rt><rp>)</rp></ruby>を<ruby><rb>選</rb><rp>(</rp><rt>えら</rt><rp>)</rp></ruby>ぶことができますが、<ruby><rb>互</rb><rp>(</rp><rt>たが</rt><rp>)</rp></ruby>いに<ruby><rb>関係</rb><rp>(</rp><rt>かんけい</rt><rp>)</rp></ruby>のない<ruby><rb>病気</rb><rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>が<ruby><rb>複数</rb><rp>(</rp><rt>ふくすう</rt><rp>)</rp></ruby>ある<ruby><rb>場合</rb><rp>(</rp><rt>ばあい</rt><rp>)</rp></ruby>は<ruby><rb>質問紙</rb><rp>(</rp><rt>しつもんし</rt><rp>)</rp></ruby>を<ruby><rb>分</rb><rp>(</rp><rt>わ</rt><rp>)</rp></ruby>けて<ruby><rb>別々</rb><rp>(</rp><rt>べつべつ</rt><rp>)</rp></ruby>に<ruby><rb>回答</rb><rp>(</rp><rt>かいとう</rt><rp>)</rp></ruby>してください。
 </p>
 
-<p>　<input type="checkbox" id="07001" name="entry.100345276" value="熱">
+<p>　<input type="checkbox" id="07001" name="entry.100345276" value="熱" required onchange="CheckRequire(this)">
     <label for="07001">
         <ruby><rb>熱</rb><rp>(</rp><rt>ねつ</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07002" name="entry.100345276" value="疲れ/だるさ">
+<p>　<input type="checkbox" id="07002" name="entry.100345276" value="疲れ/だるさ" required onchange="CheckRequire(this)">
     <label for="07002">
         <ruby><rb>疲</rb><rp>(</rp><rt>つか</rt><rp>)</rp></ruby>れ/だるさ
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07003" name="entry.100345276" value="のどや首の腫れ">
+<p>　<input type="checkbox" id="07003" name="entry.100345276" value="のどや首の腫れ" required onchange="CheckRequire(this)">
     <label for="07003">
         のどや<ruby><rb>首</rb><rp>(</rp><rt>くび</rt><rp>)</rp></ruby>の<ruby><rb>腫</rb><rp>(</rp><rt>は</rt><rp>)</rp></ruby>れ
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07004" name="entry.100345276" value="のどの痛み">
+<p>　<input type="checkbox" id="07004" name="entry.100345276" value="のどの痛み" required onchange="CheckRequire(this)">
     <label for="07004">
         のどの<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>み
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07005" name="entry.100345276" value="鼻づまり/鼻水/くしゃみ">
+<p>　<input type="checkbox" id="07005" name="entry.100345276" value="鼻づまり/鼻水/くしゃみ" required onchange="CheckRequire(this)">
     <label for="07005">
         <ruby><rb>鼻</rb><rp>(</rp><rt>はな</rt><rp>)</rp></ruby>づまり/<ruby><rb>鼻水</rb><rp>(</rp><rt>はなみず</rt><rp>)</rp></ruby>/くしゃみ
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07006" name="entry.100345276" value="咳">
+<p>　<input type="checkbox" id="07006" name="entry.100345276" value="咳" required onchange="CheckRequire(this)">
     <label for="07006">
         <ruby><rb>咳</rb><rp>(</rp><rt>せき</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07007" name="entry.100345276" value="呼吸のしずらさ/息苦しさ">
+<p>　<input type="checkbox" id="07007" name="entry.100345276" value="呼吸のしずらさ/息苦しさ" required onchange="CheckRequire(this)">
     <label for="07007">
         <ruby><rb>呼吸</rb><rp>(</rp><rt>こきゅう</rt><rp>)</rp></ruby>のしづらさ/<ruby><rb>息苦</rb><rp>(</rp><rt>いきぐる</rt><rp>)</rp></ruby>しさ
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07008" name="entry.100345276" value="頭痛">
+<p>　<input type="checkbox" id="07008" name="entry.100345276" value="頭痛" required onchange="CheckRequire(this)">
     <label for="07008">
         <ruby><rb>頭痛</rb><rp>(</rp><rt>ずつう</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07009" name="entry.100345276" value="吐き気">
+<p>　<input type="checkbox" id="07009" name="entry.100345276" value="吐き気" required onchange="CheckRequire(this)">
     <label for="07009">
         <ruby><rb>吐</rb><rp>(</rp><rt>は</rt><rp>)</rp></ruby>き<ruby><rb>気</rb><rp>(</rp><rt>け</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07010" name="entry.100345276" value="嘔吐（胃のなかのものを吐いて戻す）">
+<p>　<input type="checkbox" id="07010" name="entry.100345276" value="嘔吐（胃のなかのものを吐いて戻す）" required onchange="CheckRequire(this)">
     <label for="07010">
         <ruby><rb>嘔吐</rb><rp>(</rp><rt>おうと</rt><rp>)</rp></ruby>（<ruby><rb>胃</rb><rp>(</rp><rt>い</rt><rp>)</rp></ruby>のなかのものを<ruby><rb>吐</rb><rp>(</rp><rt>は</rt><rp>)</rp></ruby>いて<ruby><rb>戻</rb><rp>(</rp><rt>もど</rt><rp>)</rp></ruby>す）
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07011" name="entry.100345276" value="下痢">
+<p>　<input type="checkbox" id="07011" name="entry.100345276" value="下痢" required onchange="CheckRequire(this)">
     <label for="07011">
         <ruby><rb>下痢</rb><rp>(</rp><rt>げり</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07012" name="entry.100345276" value="便秘">
+<p>　<input type="checkbox" id="07012" name="entry.100345276" value="便秘" required onchange="CheckRequire(this)">
     <label for="07012">
         <ruby><rb>便秘</rb><rp>(</rp><rt>べんぴ</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07013" name="entry.100345276" value="気を失う">
+<p>　<input type="checkbox" id="07013" name="entry.100345276" value="気を失う" required onchange="CheckRequire(this)">
     <label for="07013">
         <ruby><rb>気</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby>を<ruby><rb>失</rb><rp>(</rp><rt>うしな</rt><rp>)</rp></ruby>う
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07014" name="entry.100345276" value="皮ふの症状（皮ふが赤くなったり、ぶつぶつができる）/かゆみ">
+<p>　<input type="checkbox" id="07014" name="entry.100345276" value="皮ふの症状（皮ふが赤くなったり、ぶつぶつができる）/かゆみ" required onchange="CheckRequire(this)">
     <label for="07014">
         <ruby><rb>皮</rb><rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>ふの<ruby><rb>症状</rb><rp>(</rp><rt>しょうじょう</rt><rp>)</rp></ruby>（<ruby><rb>皮</rb><rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>ふが<ruby><rb>赤</rb><rp>(</rp><rt>あか</rt><rp>)</rp></ruby>くなったり、ぶつぶつができる）/かゆみ
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07015" name="entry.100345276" value="脈の乱れ">
+<p>　<input type="checkbox" id="07015" name="entry.100345276" value="脈の乱れ" required onchange="CheckRequire(this)">
     <label for="07015">
         <ruby><rb>脈</rb><rp>(</rp><rt>みゃく</rt><rp>)</rp></ruby>の<ruby><rb>乱</rb><rp>(</rp><rt>みだ</rt><rp>)</rp></ruby>れ
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07016" name="entry.100345276" value="胸の痛み/心臓の苦しさ">
+<p>　<input type="checkbox" id="07016" name="entry.100345276" value="胸の痛み/心臓の苦しさ" required onchange="CheckRequire(this)">
     <label for="07016">
         <ruby><rb>胸</rb><rp>(</rp><rt>むね</rt><rp>)</rp></ruby>の<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>み/<ruby><rb>心臓</rb><rp>(</rp><rt>しんぞう</rt><rp>)</rp></ruby>の<ruby><rb>苦</rb><rp>(</rp><rt>くる</rt><rp>)</rp></ruby>しさ
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07017" name="entry.100345276" value="腹痛">
+<p>　<input type="checkbox" id="07017" name="entry.100345276" value="腹痛" required onchange="CheckRequire(this)">
     <label for="07017">
         <ruby><rb>腹痛</rb><rp>(</rp><rt>ふくつう</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07018" name="entry.100345276" value="その他の痛み">
+<p>　<input type="checkbox" id="07018" name="entry.100345276" value="その他の痛み" required onchange="CheckRequire(this)">
     <label for="07018">
         その<ruby><rb>他</rb><rp>(</rp><rt>た</rt><rp>)</rp></ruby>の<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>み
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07019" name="entry.100345276" value="感覚麻痺（触れたりしても感覚がない）/しびれ">
+<p>　<input type="checkbox" id="07019" name="entry.100345276" value="感覚麻痺（触れたりしても感覚がない）/しびれ" required onchange="CheckRequire(this)">
     <label for="07019">
         <ruby><rb>感覚麻痺</rb><rp>(</rp><rt>かんかくまひ</rt><rp>)</rp></ruby>（<ruby><rb>触</rb><rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>れたりしても<ruby><rb>感覚</rb><rp>(</rp><rt>かんかく</rt><rp>)</rp></ruby>がない）/しびれ
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07020" name="entry.100345276" value="不安">
+<p>　<input type="checkbox" id="07020" name="entry.100345276" value="不安" required onchange="CheckRequire(this)">
     <label for="07020">
         <ruby><rb>不安</rb><rp>(</rp><rt>ふあん</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07021" name="entry.100345276" value="気分の落ち込み/悲しみ">
+<p>　<input type="checkbox" id="07021" name="entry.100345276" value="気分の落ち込み/悲しみ" required onchange="CheckRequire(this)">
     <label for="07021">
         <ruby><rb>気分</rb><rp>(</rp><rt>きぶん</rt><rp>)</rp></ruby>の<ruby><rb>落</rb><rp>(</rp><rt>お</rt><rp>)</rp></ruby>ち<ruby><rb>込</rb><rp>(</rp><rt>こ</rt><rp>)</rp></ruby>み/<ruby><rb>悲</rb><rp>(</rp><rt>かな</rt><rp>)</rp></ruby>しみ
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07022" name="entry.100345276" value="いらつき">
+<p>　<input type="checkbox" id="07022" name="entry.100345276" value="いらつき" required onchange="CheckRequire(this)">
     <label for="07022">
         いらつき
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07023" name="entry.100345276" value="目の症状">
+<p>　<input type="checkbox" id="07023" name="entry.100345276" value="目の症状" required onchange="CheckRequire(this)">
     <label for="07023">
         <ruby><rb>目</rb><rp>(</rp><rt>め</rt><rp>)</rp></ruby>の<ruby><rb>症状</rb><rp>(</rp><rt>しょうじょう</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07024" name="entry.100345276" value="耳の症状">
+<p>　<input type="checkbox" id="07024" name="entry.100345276" value="耳の症状" required onchange="CheckRequire(this)">
     <label for="07024">
         <ruby><rb>耳</rb><rp>(</rp><rt>みみ</rt><rp>)</rp></ruby>の<ruby><rb>症状</rb><rp>(</rp><rt>しょうじょう</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07025" name="entry.100345276" value="歯の症状">
+<p>　<input type="checkbox" id="07025" name="entry.100345276" value="歯の症状" required onchange="CheckRequire(this)">
     <label for="07025">
         <ruby><rb>歯</rb><rp>(</rp><rt>は</rt><rp>)</rp></ruby>の<ruby><rb>症状</rb><rp>(</rp><rt>しょうじょう</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="checkbox" id="07026" name="entry.100345276" onchange="checkClear(this)" value="（その他）">
+<p>　<input type="checkbox" id="07026" name="entry.100345276" onchange="checkClear(this);CheckRequire(this)" value="（その他）" required>
     <label for="07026">
         その<ruby><rb>他</rb><rp>(</rp><rt>た</rt><rp>)</rp></ruby>。
         <p>
         　　　<ruby><rb>詳</rb><rp>(</rp><rt>くわ</rt><rp>)</rp></ruby>しく<ruby><rb>記入</rb><rp>(</rp><rt>きにゅう</rt><rp>)</rp></ruby>してください
-        <input type="text" id="2300st" name="entry.1371248371" onblur="gCheck(this);checkClear(this)">
+        <input type="text" id="07026t" name="entry.1371248371" onblur="gCheck(this);checkClear(this);CheckRequire(this)">
         </p>
     </label>
 </p>
+
+</span>
 
 <br>
 
@@ -545,7 +559,7 @@
     この<ruby><rb>質問紙</rb><rp>(</rp><rt>しつもんし</rt><rp>)</rp></ruby>を<ruby><rb>通</rb><rp>(</rp><rt>とお</rt><rp>)</rp></ruby>して、このケガや<ruby><rb>病気</rb><rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>を<ruby><rb>回答</rb><rp>(</rp><rt>かいとう</rt><rp>)</rp></ruby>するのは<ruby><rb>初</rb><rp>(</rp><rt>はじ</rt><rp>)</rp></ruby>めてですか？
 </p>
 
-<p>　<input type="radio" id="09001" name="entry.648703495" value="はい、初めてです。">
+<p>　<input type="radio" id="09001" name="entry.648703495" value="はい、初めてです。" required>
     <label for="09001">
         はい、<ruby><rb>初</rb><rp>(</rp><rt>はじ</rt><rp>)</rp></ruby>めてです。
     </label>
@@ -575,47 +589,47 @@
     この<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>について<ruby><rb>誰</rb><rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>に<ruby><rb>伝</rb><rp>(</rp><rt>つた</rt><rp>)</rp></ruby>えましたか。
 </p>
 
-<p>　<input type="radio" id="10001" name="entry.736852996" value="所属チームの医師">
+<p>　<input type="radio" id="10001" name="entry.736852996" value="所属チームの医師" onchange="Q10Require(this)" required>
     <label for="10001">
         <ruby><rb>所属</rb><rp>(</rp><rt>しょぞく</rt><rp>)</rp></ruby>チームの<ruby><rb>医師</rb><rp>(</rp><rt>いし</rt><rp>)</rp></ruby>
     </label>
 </p>
 
-<p>　<input type="radio" id="10002" name="entry.736852996" value="所属チームのトレーナー">
+<p>　<input type="radio" id="10002" name="entry.736852996" value="所属チームのトレーナー" onchange="Q10Require(this)">
     <label for="10002">
         <ruby><rb>所属</rb><rp>(</rp><rt>しょぞく</rt><rp>)</rp></ruby>チームのトレーナー
     </label>
 </p>
 
-<p>　<input type="radio" id="10003" name="entry.736852996" onchange="checkClear(this)" value="その他の医師。">
+<p>　<input type="radio" id="10003" name="entry.736852996" value="その他の医師。" onchange="Q10Require(this)">
     <label for="10003">
         その<ruby><rb>他</rb><rp>(</rp><rt>た</rt><rp>)</rp></ruby>の<ruby><rb>医師</rb><rp>(</rp><rt>いし</rt><rp>)</rp></ruby>。<ruby><rb>名前</rb><rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>と<ruby><rb>所属</rb><rp>(</rp><rt>しょぞく</rt><rp>)</rp></ruby>を<ruby><rb>記入</rb><rp>(</rp><rt>きにゅう</rt><rp>)</rp></ruby>してください。
         <p>
             　　　<ruby><rb>名前</rb><rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>
-            <input type="text" id="2300st" name="entry.1371248371" onblur="gCheck(this);checkClear(this)">
+            <input type="text" id="10003n" name="entry.1795827559" onblur="gCheck(this);Q10Require(this)">
         </p>
         <p>
             　　　<ruby><rb>所属</rb><rp>(</rp><rt>しょぞく</rt><rp>)</rp></ruby>
-            <input type="text" id="2300st" name="entry.1371248371" onblur="gCheck(this);checkClear(this)">
+            <input type="text" id="10003s" name="entry.605456307" onblur="gCheck(this);Q10Require(this)">
         </p>
     </label>
 </p>
 
-<p>　<input type="radio" id="10004" name="entry.736852996" onchange="checkClear(this)" value="その他のトレーナー。">
+<p>　<input type="radio" id="10004" name="entry.736852996" value="その他のトレーナー。" onchange="Q10Require(this)">
     <label for="10004">
         その<ruby><rb>他</rb><rp>(</rp><rt>た</rt><rp>)</rp></ruby>のトレーナー。<ruby><rb>名前</rb><rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>と<ruby><rb>所属</rb><rp>(</rp><rt>しょぞく</rt><rp>)</rp></ruby>を<ruby><rb>記入</rb><rp>(</rp><rt>きにゅう</rt><rp>)</rp></ruby>してください。
         <p>
             　　　<ruby><rb>名前</rb><rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>
-            <input type="text" id="2300st" name="entry.1371248371" onblur="gCheck(this);checkClear(this)">
+            <input type="text" id="10004n" name="entry.1540251053" onblur="gCheck(this);Q10Require(this)">
         </p>
         <p>
             　　　<ruby><rb>所属</rb><rp>(</rp><rt>しょぞく</rt><rp>)</rp></ruby>
-            <input type="text" id="2300st" name="entry.1371248371" onblur="gCheck(this);checkClear(this)">
+            <input type="text" id="10004s" name="entry.1978145531" onblur="gCheck(this);Q10Require(this)">
         </p>
     </label>
 </p>
 
-<p>　<input type="radio" id="10005" name="entry.736852996" value="伝えていない。">
+<p>　<input type="radio" id="10005" name="entry.736852996" value="伝えていない。" onchange="Q10Require(this)">
     <label for="10005">
         <ruby><rb>伝</rb><rp>(</rp><rt>つた</rt><rp>)</rp></ruby>えていない。
     </label>
@@ -633,7 +647,7 @@
     この<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>について、ほかにもメディカルチームに<ruby><rb>伝</rb><rp>(</rp><rt>つた</rt><rp>)</rp></ruby>えておきたいことがあれば<ruby><rb>記入</rb><rp>(</rp><rt>きにゅう</rt><rp>)</rp></ruby>してください。（メディカルチームとは、<ruby><rb>所属</rb><rp>(</rp><rt>しょぞく</rt><rp>)</rp></ruby>チームの<ruby><rb>医師</rb><rp>(</rp><rt>いし</rt><rp>)</rp></ruby>やトレーナーのこととします）
 </p>
 <p>
-<input type="text" id="11001" name="entry.1509469500" size="85">
+<input type="text" id="11001" name="entry.1509469500" size="85" required>
 </p>
 
 <br>
@@ -650,7 +664,7 @@
     その<ruby><rb>他</rb><rp>(</rp><rt>た</rt><rp>)</rp></ruby>の<ruby><rb>病気</rb><rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>やケガとは、<ruby><rb>上</rb><rp>(</rp><rt>うえ</rt><rp>)</rp></ruby>の<ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>11までで<ruby><rb>答</rb><rp>(</rp><rt>こた</rt><rp>)</rp></ruby>えたものとは<ruby><rb>別</rb><rp>(</rp><rt>べつ</rt><rp>)</rp></ruby>の<ruby><rb>病気</rb><rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>やケガのことです。
 </p>
 
-<p>　<input type="radio" id="12001" name="entry.1620273542" value="はい">
+<p>　<input type="radio" id="12001" name="entry.1620273542" value="はい" required>
     <label for="12001">
         はい
     </label>
@@ -662,15 +676,16 @@
     </label>
 </p>
 
-<!--
+</span>
+
 <center>
     <p>
         <input type="submit" value="送信する" class="large_button">
     </p>
 </center>
--->
 
 </form>
-<script src="code.js" type="text/javascript" charset="utf-8"></script>
+<script src="code.js" type="text/javascript" charset="utf-8">var submitted = false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='https://kangourou7.github.io/2023questionnaire/thanks.html';}"></iframe>
     </body>
 </html>

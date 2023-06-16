@@ -1,37 +1,20 @@
-var q0900_Name = "entry.1189262394"
-var q1000_Name = "entry.1912228487"
-var q1100_Name = "entry.1373016093"
-var q1200_Name = "entry.1921329787"
-var q1300_Name = "entry.2143339229"
-var q1400_Name = "entry.1127244046"
-var q1500_Name = "entry.1307366704"
-var q1600_Name = "entry.364753067"
-var q1700_Name = "entry.1567367990"
-var q1800_Name = "entry.36840026"
-var q1900_Name = "entry.69604023"
-var q2000_Name = "entry.1140198498"
-var q2101_Name = "entry.848158956"
-var q2102_Name = "entry.1450093137"
-var q2103_Name = "entry.2109641383"
-var q2104_Name = "entry.143211267"
-var q2105_Name = "entry.161345526"
-var q2106_Name = "entry.610234784"
-var q2107_Name = "entry.703959160"
-var q2108_Name = "entry.225873728"
-var q2109_Name = "entry.1052260797"
-var q2110_Name = "entry.986771553"
-var q2111_Name = "entry.992443041"
-var q2112_Name = "entry.1435453234"
-var q2113_Name = "entry.2025236233"
-var q2114_Name = "entry.222011874"
-var q2115_Name = "entry.1589964351"
-var q2116_Name = "entry.822947387"
-var q2117_Name = "entry.1828273273"
-var q2118_Name = "entry.708614092"
-var q2119_Name = "entry.504266363"
-var q2200_Name = "entry.272757457"
-var q2300_Name = "entry.1371248371"
-var q2400_Name = "entry.321943382"
+var q0000_Name = "entry.1526945642"
+var q0100_Name = "entry.2022183060"
+var q0200_Name = "entry.1016150325"
+var q0300_Name = "entry.326255673"
+var q0400_Name = "entry.2130880281"
+var q0500_Name = "entry.1272528959"
+var q0600_Name = "entry.1282152750"
+var q0700_Name = "entry.100345276"
+var q0800_Name = "entry.1282044074"
+var q0900_Name = "entry.648703495"
+var q1000_Name = "entry.736852996"
+var q1100_Name = "entry.1509469500"
+var q1200_Name = "entry.1620273542"
+
+
+
+
 
 /*
 var q9targetY = [q11_Name,q12_Name,q13_Name]
@@ -146,6 +129,76 @@ function SportsEvent(ele){
     document.getElementById("03000").innerHTML = eventValue
 }
 
+//質問1での分岐
+function Q1_branch(ele){
+    var qId = ele.id
+    var Qs = [q0200_Name,q0300_Name,q0400_Name,q0500_Name,q0600_Name,q0700_Name,q0800_Name,q0900_Name,q1000_Name,q1100_Name,q1200_Name]
+    if(qId == "01001"){
+        document.getElementById("0100top").style.display = "none";
+        for(i=0;i<Qs.length;i++){
+            var Cs = document.getElementsByName(Qs[i]);
+            for(j=0;j<Cs.length;j++){
+                //window.alert(Cs[j]);
+                Cs[j].checked = false;
+                Cs[j].required = false;
+            }
+        }
+    }else if(qId == "01002" || qId == "01003"){
+        document.getElementById("0100top").style.display = "block";
+        for(i=0;i<Qs.length;i++){
+            var Cs = document.getElementsByName(Qs[i]);
+            for(j=0;j<Cs.length;j++){
+                Cs[j].required = true;
+            }
+        }
+    }else if(qId == "01004"){
+        document.getElementById("0100top").style.display = "block";
+        document.getElementById("0100last").style.display = "none";
+        for(i=0;i<3;i++){
+            var Cs = document.getElementsByName(Qs[i]);
+            for(j=0;j<Cs.length;j++){
+                Cs[j].checked = false;
+                Cs[j].required = false;
+            }
+        }
+        for(i=3;i<Qs.length;i++){
+            var Cs = document.getElementsByName(Qs[i]);
+            for(j=0;j<Cs.length;j++){
+                Cs[j].required = true;
+            }
+        }
+    }
+}
+
+//質問5での分岐
+function Q5_branch(ele){
+    var qId = ele.id;
+    //window.alert(ele.id)
+    var kegaQ = document.getElementById("0500kega");
+    var kegaC = document.getElementsByName(q0600_Name);
+    var byokiQ = document.getElementById("0500byoki");
+    var byokiC = document.getElementsByName(q0700_Name);
+    if(qId == "05001"){
+        kegaQ.style.display = "block";
+        byokiQ.style.display = "none";
+        for(i=0;i<byokiC.length;i++){
+            byokiC[i].checked = false;
+            byokiC[i].required = false;
+        }
+        document.getElementById("07026t").value = "";
+    }else if(qId == "05002"){
+        kegaQ.style.display = "none";
+        byokiQ.style.display = "block";
+        for(i=0;i<kegaC.length;i++){
+            kegaC[i].checked = false;
+            kegaC[i].required = false;
+        }
+        document.getElementById("06019t").value = "";
+    }
+}
+
+
+/*
 //質問Yes・No分岐
 function YesNo(ele){
     var qId = ele.id.charAt(0) + ele.id.charAt(1) + ele.id.charAt(2) + ele.id.charAt(3)
@@ -271,9 +324,9 @@ function YesNo(ele){
         }
     }
 }
+*/
 
-
-
+/*
 //質問30単一回答制御
 function q30(ele){
     for(i=1;i<=5;i++){
@@ -282,6 +335,15 @@ function q30(ele){
         if(checkedId != changeId){
             document.getElementById(changeId).checked = false
         }
+    }
+}
+*/
+
+//質問6「わからない」クリア
+function Q6tClear(ele){
+    var ClearId = ele.id;
+    if(document.getElementById(ClearId).checked == true){
+        document.getElementById("06019t").value = "";
     }
 }
 
@@ -328,6 +390,24 @@ function checkClear(ele){
     }else if(document.getElementById(wsId).checked == false){
         document.getElementById(wstId).required = false;
         document.getElementById(wstId).value = "";
+    }
+}
+
+//質問10記述部分の制御
+function Q10Require(ele){
+    var Q10Id = ele.id;
+    if(Q10Id !== "10003"){
+        document.getElementById("10003n").value = "";
+        document.getElementById("10003s").value = "";
+    }else if(Q10Id !== "10004"){
+        document.getElementById("10004n").value = "";
+        document.getElementById("10004s").value = "";
+    }else if(Q10Id == "10003"){
+        document.getElementById("10003n").required = true;
+        document.getElementById("10003s").required = true;
+    }else if(Q10Id == "10004"){
+        document.getElementById("10004n").required = true;
+        document.getElementById("10004s").required = true;
     }
 }
 
@@ -388,13 +468,28 @@ function q08001(ele){
     }
 }
 
+//チェックボックス必須制御
+function CheckRequire(ele){
+    var count = 0;
+    for(i=7001; i<=7026; i++){
+        if(document.getElementById("0"+i).checked == true){
+            count += 1;
+        }
+    }
+    if(count >= 1){
+        for(i=7001; i<=7026; i++){
+            document.getElementById("0"+i).required = false;
+        }
+    }
+}
 
-//チェックボックス（11・13・16・18・20・22・23・＋24）必須化
+/*
+//チェックボックス（7）必須化
 function isCheck(){
     //var checkedId = ele.id;
-    var checkId = ["0900","1400","1900","2112"]
-    var checkQs = [q1100_Name,q1300_Name,q1600_Name,q1800_Name,q2000_Name,q2200_Name,q2300_Name]
-    var checkQsNum = ["11","13","16","18","20","22","23"]
+    var checkId = ["0700"]
+    var checkQs = [q0700_Name]
+    var checkQsNum = ["07"]
     var count = 0;
     var msg = "";
     for(i=0;i<checkId.length;i++){
@@ -414,46 +509,40 @@ function isCheck(){
                     msg += "、"
                 }
                 msg += checkQsNum[i*2];
-            }
-
-            if(checkId[i] != "2112"){
-                var checkBoxes = document.getElementsByName(checkQs[i*2+1])
-                count = 0;
-                for(j=0;j<checkBoxes.length;j++){
-                    if(checkBoxes[j].checked == true){
-                        count++;
-                    }
-                }
-                if(count==0){
-                    if(msg != ""){
-                        msg += "、"
-                    }
-                    msg += checkQsNum[i*2+1];
-                }
-            }
-            
+            }            
         }
-    }
-    //24のみ必須化
-    var checkBoxes = document.getElementsByName(q2400_Name)
-    count = 0;
-    for(j=0;j<checkBoxes.length;j++){
-        if(checkBoxes[j].checked == true){
-            count++;
-        }
-    }
-    if(count==0){
-        if(msg != ""){
-            msg += "、"
-        }
-        msg += "24";
     }
 
     if(msg != ""){
         alert("質問" + msg + "に回答してください。")
         return false;
     }
+
+    //ページ遷移
+    var YesQ = document.getElementById("12001").checked
+    window.alert(YesQ);
+    var NoQ = document.getElementById("12002").checked
+    if(YesQ == true){
+        location = "https://kangourou7.github.io/2023questionnaire/ostrc-h2.jpy.html";
+    }else if(NoQ == true){
+        location = "https://kangourou7.github.io/2023questionnaire/thanks.html";
+    }
 }
+*/
+
+//ページ遷移
+function PageTransition(ele){
+    var YesQ = document.getElementById("12001").checked
+    //window.alert(YesQ);
+    var NoQ = document.getElementById("12002").checked
+    if(YesQ == true){
+        location = "https://kangourou7.github.io/2023questionnaire/ostrc-h2.jpy.html";
+    }else if(NoQ == true){
+        location = "https://kangourou7.github.io/2023questionnaire/thanks.html";
+    }
+}
+
+
 
 /*
     qNo = checkedId.charAt(0) + checkedId.charAt(1);
@@ -485,6 +574,7 @@ function reqGutai(ele){
 }
 */
 
+/*
 //正の整数のみ入力可能にする
 function numChk04(){
     var inputValue = document.getElementById("04001").value;
@@ -512,7 +602,7 @@ function numChk06(ele){
         document.getElementById("06001").value = inputNum;
     }
 }
-
+*/
 
 
 /*
