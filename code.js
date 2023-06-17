@@ -751,19 +751,13 @@ function Q1_branch_O(ele){
             }
         }
     }else if(qId == "01004"){
-        document.getElementById("0100top").style.display = "block";
-        document.getElementById("0100last").style.display = "none";
-        for(i=0;i<3;i++){
+        document.getElementById("0100top").style.display = "none";
+        for(i=0;i<Qs.length;i++){
             var Cs = document.getElementsByName(Qs[i]);
             for(j=0;j<Cs.length;j++){
+                //window.alert(Cs[j]);
                 Cs[j].checked = false;
                 Cs[j].required = false;
-            }
-        }
-        for(i=3;i<Qs.length;i++){
-            var Cs = document.getElementsByName(Qs[i]);
-            for(j=0;j<Cs.length;j++){
-                Cs[j].required = true;
             }
         }
     }
