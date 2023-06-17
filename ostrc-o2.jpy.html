@@ -31,7 +31,11 @@
 </p>
 
 <p>
-    <input type="email" id="email" name="entry.130713936" size="40" required>
+    この<ruby><rb>質問紙</rb><rp>(</rp><rt>しつもんし</rt><rp>)</rp></ruby>が<ruby><rb>届</rb><rp>(</rp><rt>とど</rt><rp>)</rp></ruby>いているメールアドレスを<ruby><rb>入力</rb><rp>(</rp><rt>にゅうりょく</rt><rp>)</rp></ruby>してください。
+</p>
+
+<p>
+    <input type="email" id="email" name="entry.1293114779" size="40" required>
 </p>
 
 <br>
@@ -58,39 +62,41 @@
 
 <p>
     <b>
-        <ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>１―<ruby><rb>参加</rb><rp>(</rp><rt>さんか</rt><rp>)</rp></ruby>
+        <ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>1―<ruby><rb>参加</rb><rp>(</rp><rt>さんか</rt><rp>)</rp></ruby>
     </b>
 </p>
 <p>
     <ruby><rb>過去</rb><rp>(</rp><rt>かこ</rt><rp>)</rp></ruby>7<ruby><rb>日間</rb><rp>(</rp><rt>かかん</rt><rp>)</rp></ruby>に<ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>の<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>により、<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>への<ruby><rb>参加</rb><rp>(</rp><rt>さんか</rt><rp>)</rp></ruby>に<ruby><rb>影響</rb><rp>(</rp><rt>えいきょう</rt><rp>)</rp></ruby>が<ruby><rb>出</rb><rp>(</rp><rt>で</rt><rp>)</rp></ruby>ましたか？
 </p>
 
-<p>　<input type="radio" id="01001" name="entry.1015482029" value="膝の問題はなく、全ての練習や試合に参加することができた。" required>
+<p>　<input type="radio" id="01001" name="entry.1015482029" value="膝の問題はなく、全ての練習や試合に参加することができた。" onchange="Q1_branch_O(this)" required>
     <label for="01001">
         <ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>の<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>はなく、<ruby><rb>全</rb><rp>(</rp><rt>すべ</rt><rp>)</rp></ruby>ての<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>に<ruby><rb>参加</rb><rp>(</rp><rt>さんか</rt><rp>)</rp></ruby>することができた。
     </label>
 </p>
-<p>　<input type="radio" id="01002" name="entry.1015482029" value="膝の問題はあったが、全ての練習や試合に参加することができた。">
+<p>　<input type="radio" id="01002" name="entry.1015482029" value="膝の問題はあったが、全ての練習や試合に参加することができた。" onchange="Q1_branch_O(this)">
     <label for="01002">
         <ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>の<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>はあったが、<ruby><rb>全</rb><rp>(</rp><rt>すべ</rt><rp>)</rp></ruby>ての<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>に<ruby><rb>参加</rb><rp>(</rp><rt>さんか</rt><rp>)</rp></ruby>することができた。
     </label>
 </p>
-<p>　<input type="radio" id="01003" name="entry.1015482029" value="膝の問題があり、練習や試合への参加を減らした。">
+<p>　<input type="radio" id="01003" name="entry.1015482029" value="膝の問題があり、練習や試合への参加を減らした。" onchange="Q1_branch_O(this)">
     <label for="01003">
         <ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>の<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>があり、<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>への<ruby><rb>参加</rb><rp>(</rp><rt>さんか</rt><rp>)</rp></ruby>を<ruby><rb>減</rb><rp>(</rp><rt>へ</rt><rp>)</rp></ruby>らした。
     </label>
 </p>
-<p>　<input type="radio" id="01004" name="entry.1015482029" value="膝の問題があり、練習や試合を行うことができなかった。">
+<p>　<input type="radio" id="01004" name="entry.1015482029" value="膝の問題があり、練習や試合を行うことができなかった。" onchange="Q1_branch_O(this)">
     <label for="01004">
         <ruby><rb>膝</rb><rp>(</rp><rt>ひざ</rt><rp>)</rp></ruby>の<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>があり、<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>や<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>を<ruby><rb>行</rb><rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>うことができなかった。
     </label>
 </p>
 
+<span id="0100top">
+
 <br>
 
 <p>
     <b>
-        <ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>２―<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>/<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>の<ruby><rb>変更</rb><rp>(</rp><rt>へんこう</rt><rp>)</rp></ruby>
+        <ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>2―<ruby><rb>練習</rb><rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>/<ruby><rb>試合</rb><rp>(</rp><rt>しあい</rt><rp>)</rp></ruby>の<ruby><rb>変更</rb><rp>(</rp><rt>へんこう</rt><rp>)</rp></ruby>
     </b>
 </p>
 <p>
@@ -125,7 +131,7 @@
 
 <p>
     <b>
-        <ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>３―パフォーマンス
+        <ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>3―パフォーマンス
     </b>
 </p>
 <p>
@@ -160,7 +166,7 @@
 
 <p>
     <b>
-        <ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>４―<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>み
+        <ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>4―<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>み
     </b>
 </p>
 <p>
@@ -187,6 +193,8 @@
         かなり<ruby><rb>痛</rb><rp>(</rp><rt>いた</rt><rp>)</rp></ruby>かった。
     </label>
 </p>
+
+</span>
 
 <center>
     <p>

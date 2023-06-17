@@ -129,12 +129,13 @@ function SportsEvent(ele){
     document.getElementById("03000").innerHTML = eventValue
 }
 
-//質問1での分岐
+//質問1での分岐(O2)
 function Q1_branch(ele){
     var qId = ele.id
     var Qs = [q0200_Name,q0300_Name,q0400_Name,q0500_Name,q0600_Name,q0700_Name,q0800_Name,q0900_Name,q1000_Name,q1100_Name,q1200_Name]
     if(qId == "01001"){
-        document.getElementById("0100top").style.display = "none";
+        document.getElementById("q2-4").style.display = "none";
+        document.getElementById("q5-12").style.display = "none";
         for(i=0;i<Qs.length;i++){
             var Cs = document.getElementsByName(Qs[i]);
             for(j=0;j<Cs.length;j++){
@@ -143,17 +144,31 @@ function Q1_branch(ele){
                 Cs[j].required = false;
             }
         }
-    }else if(qId == "01002" || qId == "01003"){
-        document.getElementById("0100top").style.display = "block";
+    }else if(qId == "01002"){
+        document.getElementById("q2-4").style.display = "block";
+        document.getElementById("q5-12").style.display = "block";
         for(i=0;i<Qs.length;i++){
             var Cs = document.getElementsByName(Qs[i]);
-            for(j=0;j<Cs.length;j++){
-                Cs[j].required = true;
+            if(Qs[i] !== q1100_Name){
+                for(j=0;j<Cs.length;j++){
+                    Cs[j].required = true;
+                }
+            }
+        }
+    }else if(qId == "01003"){
+        document.getElementById("q2-4").style.display = "block";
+        document.getElementById("q5-12").style.display = "block";
+        for(i=0;i<Qs.length;i++){
+            var Cs = document.getElementsByName(Qs[i]);
+            if(Qs[i] !== q1100_Name){
+                for(j=0;j<Cs.length;j++){
+                    Cs[j].required = true;
+                }
             }
         }
     }else if(qId == "01004"){
-        document.getElementById("0100top").style.display = "block";
-        document.getElementById("0100last").style.display = "none";
+        document.getElementById("q2-4").style.display = "none";
+        document.getElementById("q5-12").style.display = "block";
         for(i=0;i<3;i++){
             var Cs = document.getElementsByName(Qs[i]);
             for(j=0;j<Cs.length;j++){
@@ -163,8 +178,10 @@ function Q1_branch(ele){
         }
         for(i=3;i<Qs.length;i++){
             var Cs = document.getElementsByName(Qs[i]);
-            for(j=0;j<Cs.length;j++){
-                Cs[j].required = true;
+            if(Qs[i] !== q1100_Name){
+                for(j=0;j<Cs.length;j++){
+                    Cs[j].required = true;
+                }
             }
         }
     }
@@ -393,7 +410,7 @@ function checkClear(ele){
     }
 }
 
-//質問10記述部分の制御
+//質問10記述部分の必須制御
 function Q10Require(ele){
     var Q10Id = ele.id;
     if(Q10Id !== "10003"){
@@ -408,6 +425,33 @@ function Q10Require(ele){
     }else if(Q10Id == "10004"){
         document.getElementById("10004n").required = true;
         document.getElementById("10004s").required = true;
+    }
+}
+
+//質問10記述部分の重複削除
+function Q10textClear(ele){
+    var checkedId = ele.id;
+    var qId = checkedId.charAt(0) + checkedId.charAt(1) + checkedId.charAt(2) + checkedId.charAt(3) + checkedId.charAt(4);
+    var nId = checkedId.charAt(0) + checkedId.charAt(1) + checkedId.charAt(2) + checkedId.charAt(3) + checkedId.charAt(4) + "n";
+    var sId = checkedId.charAt(0) + checkedId.charAt(1) + checkedId.charAt(2) + checkedId.charAt(3) + checkedId.charAt(4) + "s";
+    if(qId == "10003"){
+        if(document.getElementById(nId).value != "" || document.getElementById(sId).value != ""){
+            document.getElementById("10003n").required = true;
+            document.getElementById("10003s").required = true;
+            document.getElementById("10004n").value = "";
+            document.getElementById("10004s").value = "";
+            document.getElementById("10004n").required = false;
+            document.getElementById("10004s").required = false;
+        }
+    }else if(qId == "10004"){
+        if(document.getElementById(nId).value != "" || document.getElementById(sId).value != ""){
+            document.getElementById("10004n").required = true;
+            document.getElementById("10004s").required = true;
+            document.getElementById("10003n").value = "";
+            document.getElementById("10003s").value = "";
+            document.getElementById("10003n").required = false;
+            document.getElementById("10003s").required = false;
+        }
     }
 }
 
@@ -665,6 +709,65 @@ function point_check(str){
 	return(ok);
 }
 */
+
+/*
+//フォームを送信する
+function submitForm(){
+    if(document.getElementById("12001").checked == true){
+        document.form1.submit()
+        window.location.href = "https://kangourou7.github.io/2023questionnaire/ostrc-h2.jpy.html"
+    }else if(document.getElementById("12002").checked == true){
+        document.form1.submit()
+        window.location.href = "https://kangourou7.github.io/2023questionnaire/thanks.html"
+    }
+}
+*/
+
+//送信後ページ遷移
+function submittedPage(){
+    document.form1.action = "https://kangourou7.github.io/2023questionnaire/ostrc-h2.jpy.html";
+}
+
+//質問1での分岐(O2)
+function Q1_branch_O(ele){
+    var qId = ele.id
+    var Qs = ["entry.1279962251","entry.244485891","entry.1652200503"]
+    if(qId == "01001"){
+        document.getElementById("0100top").style.display = "none";
+        for(i=0;i<Qs.length;i++){
+            var Cs = document.getElementsByName(Qs[i]);
+            for(j=0;j<Cs.length;j++){
+                //window.alert(Cs[j]);
+                Cs[j].checked = false;
+                Cs[j].required = false;
+            }
+        }
+    }else if(qId == "01002" || qId == "01003"){
+        document.getElementById("0100top").style.display = "block";
+        for(i=0;i<Qs.length;i++){
+            var Cs = document.getElementsByName(Qs[i]);
+            for(j=0;j<Cs.length;j++){
+                Cs[j].required = true;
+            }
+        }
+    }else if(qId == "01004"){
+        document.getElementById("0100top").style.display = "block";
+        document.getElementById("0100last").style.display = "none";
+        for(i=0;i<3;i++){
+            var Cs = document.getElementsByName(Qs[i]);
+            for(j=0;j<Cs.length;j++){
+                Cs[j].checked = false;
+                Cs[j].required = false;
+            }
+        }
+        for(i=3;i<Qs.length;i++){
+            var Cs = document.getElementsByName(Qs[i]);
+            for(j=0;j<Cs.length;j++){
+                Cs[j].required = true;
+            }
+        }
+    }
+}
 
 function idTest(ele){
     alert(document.getElementById(ele.id).id);

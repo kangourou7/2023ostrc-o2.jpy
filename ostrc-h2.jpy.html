@@ -7,7 +7,11 @@
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf_sU92Wv7ph-aq-6yQM2KtADtzWZ_sQK63815NmTZwxKFolQ/formResponse" method="POST" enctype="multipart/form-data" name="EmailForm" id="form1" target=”hidden_iframe” onsubmit="submitted=true;">
+        <script type="text/javascript">
+             var submitted = false;
+             var currentURL = window.location.host;
+        </script>
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf_sU92Wv7ph-aq-6yQM2KtADtzWZ_sQK63815NmTZwxKFolQ/formResponse" method="POST" enctype="multipart/form-data" name="EmailForm" id="form1" onsubmit="submitted = true;">
 
 <center>
     <h2>
@@ -23,6 +27,22 @@
 </p>
 <p>
 　もし、いくつかのケガや<ruby><rb>病気</rb><rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>がある<ruby><rb>場合</rb><rp>(</rp><rt>ばあい</rt><rp>)</rp></ruby>には、<ruby><rb>過去</rb><rp>(</rp><rt>かこ</rt><rp>)</rp></ruby>7<ruby><rb>日間</rb><rp>(</rp><rt>かかん</rt><rp>)</rp></ruby>で<ruby><rb>最</rb><rp>(</rp><rt>もっと</rt><rp>)</rp></ruby>も<ruby><rb>悪</rb><rp>(</rp><rt>わる</rt><rp>)</rp></ruby>かったものから<ruby><rb>答</rb><rp>(</rp><rt>こた</rt><rp>)</rp></ruby>えてください。その<ruby><rb>他</rb><rp>(</rp><rt>た</rt><rp>)</rp></ruby>の<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>については<ruby><rb>質問紙</rb><rp>(</rp><rt>しつもんし</rt><rp>)</rp></ruby>の<ruby><rb>最後</rb><rp>(</rp><rt>さいご</rt><rp>)</rp></ruby>に<ruby><rb>回答</rb><rp>(</rp><rt>かいとう</rt><rp>)</rp></ruby>する<ruby><rb>機会</rb><rp>(</rp><rt>きかい</rt><rp>)</rp></ruby>があります。
+</p>
+
+<br>
+
+<p>
+    <b>
+        メールアドレス
+    </b>
+</p>
+
+<p>
+    この<ruby><rb>質問紙</rb><rp>(</rp><rt>しつもんし</rt><rp>)</rp></ruby>が<ruby><rb>届</rb><rp>(</rp><rt>とど</rt><rp>)</rp></ruby>いているメールアドレスを<ruby><rb>入力</rb><rp>(</rp><rt>にゅうりょく</rt><rp>)</rp></ruby>してください。
+</p>
+
+<p>
+    <input type="email" id="email" name="entry.130713936" size="40" required>
 </p>
 
 <br>
@@ -76,9 +96,7 @@
     </label>
 </p>
 
-<span id="0100top">
-
-<span id="0100last">
+<span id="q2-4">
 
 <br>
 
@@ -194,6 +212,8 @@
 
 </span>
 
+<span id="q5-12">
+
 <br>
 
 <p>
@@ -202,7 +222,7 @@
     </b>
 </p>
 <p>
-    <ruby><rb>上</rb><rp>(</rp><rt>うえ</rt><rp>)</rp></ruby>の４つの<ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>で<ruby><rb>答</rb><rp>(</rp><rt></rt>こた</rt><rp>)</rp></ruby>えた<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>はケガまたは<ruby><rb>病気</rb><rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>のどちらですか？
+    <ruby><rb>上</rb><rp>(</rp><rt>うえ</rt><rp>)</rp></ruby>の<ruby><rb>質問</rb><rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>で<ruby><rb>答</rb><rp>(</rp><rt>こた</rt><rp>)</rp></ruby>えた<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>はケガまたは<ruby><rb>病気</rb><rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>のどちらですか？
 </p>
 
 <p>　<input type="radio" id="05001" name="entry.1272528959" value="ケガ" required onchange="Q5_branch(this)">
@@ -229,6 +249,10 @@
 <p>
     あなたのケガの<ruby><rb>部位</rb><rp>(</rp><rt>ぶい</rt><rp>)</rp></ruby>を<ruby><rb>選</rb><rp>(</rp><rt>えら</rt><rp>)</rp></ruby>んでください。もしケガがいくつかの<ruby><rb>部位</rb><rp>(</rp><rt>ぶい</rt><rp>)</rp></ruby>におよぶ<ruby><rb>場合</rb><rp>(</rp><rt>ばあい</rt><rp>)</rp></ruby>は<ruby><rb>一番</rb><rp>(</rp><rt>いちばん</rt><rp>)</rp></ruby><ruby><rb>気</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby>になる<ruby><rb>部位</rb><rp>(</rp><rt>ぶい</rt><rp>)</rp></ruby>を<ruby><rb>選</rb><rp>(</rp><rt>えら</rt><rp>)</rp></ruby>んでください。もしケガが<ruby><rb>複数</rb><rp>(</rp><rt>ふくすう</rt><rp>)</rp></ruby>ある<ruby><rb>場合</rb><rp>(</rp><rt>ばあい</rt><rp>)</rp></ruby>は<ruby><rb>質問紙</rb><rp>(</rp><rt>しつもんし</rt><rp>)</rp></ruby>を<ruby><rb>分</rb><rp>(</rp><rt>わ</rt><rp>)</rp></ruby>けて<ruby><rb>別々</rb><rp>(</rp><rt>べつべつ</rt><rp>)</rp></ruby>に<ruby><rb>回答</rb><rp>(</rp><rt>かいとう</rt><rp>)</rp></ruby>してください。
 </p>
+
+<center>
+    <img src="H2.Q6_figure.png" width="70%">
+</center>
 
 <p>　<input type="radio" id="06001" name="entry.1282152750" onchange="tClear(this)" value="頭" required>
     <label for="06001">
@@ -538,6 +562,7 @@
 <p>
     <select id="08001" name="entry.1282044074" required>
         <option value="" hidden></option>
+        <option value="0">0日</option>
         <option value="1">1日</option>
         <option value="2">2日</option>
         <option value="3">3日</option>
@@ -606,11 +631,11 @@
         その<ruby><rb>他</rb><rp>(</rp><rt>た</rt><rp>)</rp></ruby>の<ruby><rb>医師</rb><rp>(</rp><rt>いし</rt><rp>)</rp></ruby>。<ruby><rb>名前</rb><rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>と<ruby><rb>所属</rb><rp>(</rp><rt>しょぞく</rt><rp>)</rp></ruby>を<ruby><rb>記入</rb><rp>(</rp><rt>きにゅう</rt><rp>)</rp></ruby>してください。
         <p>
             　　　<ruby><rb>名前</rb><rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>
-            <input type="text" id="10003n" name="entry.1795827559" onblur="gCheck(this);Q10Require(this)">
+            <input type="text" id="10003n" name="entry.1795827559" onblur="gCheck(this);Q10textClear(this)">
         </p>
         <p>
             　　　<ruby><rb>所属</rb><rp>(</rp><rt>しょぞく</rt><rp>)</rp></ruby>
-            <input type="text" id="10003s" name="entry.605456307" onblur="gCheck(this);Q10Require(this)">
+            <input type="text" id="10003s" name="entry.605456307" onblur="gCheck(this);Q10textClear(this)">
         </p>
     </label>
 </p>
@@ -620,11 +645,11 @@
         その<ruby><rb>他</rb><rp>(</rp><rt>た</rt><rp>)</rp></ruby>のトレーナー。<ruby><rb>名前</rb><rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>と<ruby><rb>所属</rb><rp>(</rp><rt>しょぞく</rt><rp>)</rp></ruby>を<ruby><rb>記入</rb><rp>(</rp><rt>きにゅう</rt><rp>)</rp></ruby>してください。
         <p>
             　　　<ruby><rb>名前</rb><rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>
-            <input type="text" id="10004n" name="entry.1540251053" onblur="gCheck(this);Q10Require(this)">
+            <input type="text" id="10004n" name="entry.1540251053" onblur="gCheck(this);Q10textClear(this)">
         </p>
         <p>
             　　　<ruby><rb>所属</rb><rp>(</rp><rt>しょぞく</rt><rp>)</rp></ruby>
-            <input type="text" id="10004s" name="entry.1978145531" onblur="gCheck(this);Q10Require(this)">
+            <input type="text" id="10004s" name="entry.1978145531" onblur="gCheck(this);Q10textClear(this)">
         </p>
     </label>
 </p>
@@ -647,7 +672,7 @@
     この<ruby><rb>問題</rb><rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>について、ほかにもメディカルチームに<ruby><rb>伝</rb><rp>(</rp><rt>つた</rt><rp>)</rp></ruby>えておきたいことがあれば<ruby><rb>記入</rb><rp>(</rp><rt>きにゅう</rt><rp>)</rp></ruby>してください。（メディカルチームとは、<ruby><rb>所属</rb><rp>(</rp><rt>しょぞく</rt><rp>)</rp></ruby>チームの<ruby><rb>医師</rb><rp>(</rp><rt>いし</rt><rp>)</rp></ruby>やトレーナーのこととします）
 </p>
 <p>
-<input type="text" id="11001" name="entry.1509469500" size="85" required>
+<input type="text" id="11001" name="entry.1509469500" size="85">
 </p>
 
 <br>
@@ -680,12 +705,20 @@
 
 <center>
     <p>
-        <input type="submit" value="送信する" class="large_button">
+        <button type= "submit" id="btn" class="large_button">送信する</button>
     </p>
 </center>
 
+<!--
+<center>
+    <p>
+        <input type="submit" value="送信する" class="large_button">
+    </p>
+</center>
+-->
+
 </form>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='https://kangourou7.github.io/2023questionnaire/ostrc-h2.jpy.html';}"></iframe>
 <script src="code.js" type="text/javascript" charset="utf-8">var submitted = false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='https://kangourou7.github.io/2023questionnaire/thanks.html';}"></iframe>
     </body>
 </html>
